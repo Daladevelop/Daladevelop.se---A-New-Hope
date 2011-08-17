@@ -83,8 +83,23 @@ body {
 	line-height: 1.5em;
 
 	/* Colors */
-	background: #fff;
+	background: rgb(249, 248, 247);
 }
+
+/* Some basic typography */
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+	}
+	h1 {
+		font-size: 2.4em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+/* End of typography */
 
 /*
 	The header will get to occupy 1/2 of the iPhone height
@@ -102,6 +117,10 @@ header[role=banner] {
 	background-position: 50% 16px;
 	background-repeat: no-repeat;
 	color: rgb(249, 248, 247);
+	
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6);
 }
 
 	header[role=banner] h1, header[role=banner] span { /* The logo text */
@@ -111,3 +130,86 @@ header[role=banner] {
 		text-align: center;
 		font-weight: bold;
 	}
+
+/*
+	The articles will have some padding to the left
+	and right but on these small screens they will
+	be full-width
+	
+	10px padding at 16px per em = 0,625em
+*/
+article[role=article] {
+	padding: 0.625em;
+}
+
+/* Main navigation */
+	nav[role=navigation] {
+		/*
+			This takes the blue color from
+			the logo as background color
+			with a little bit of a gradient.
+			(The commented stuff is the orange color
+			instead.)
+		*/
+		/*background: rgb(253,178,0);
+		background: -moz-linear-gradient(top, rgba(253,178,0,1) 0%, rgba(255,29,0,1) 15%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,178,0,1)), color-stop(15%,rgba(255,29,0,1)));
+		background: -webkit-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
+		background: -o-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
+		background: -ms-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
+		background: linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
+		*/
+		background: rgb(53,101,255);
+		background: -moz-linear-gradient(top, rgba(53,101,255,1) 0%, rgba(48,42,255,1) 15%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,101,255,1)), color-stop(15%,rgba(48,42,255,1)));
+		background: -webkit-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
+		background: -o-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
+		background: -ms-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
+		background: linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
+		
+		width: 240px;
+		padding: 10px 0;
+		
+		position: relative;
+		margin: 1em auto;
+		
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+	}
+	nav[role=navigation] a {
+		display: block;
+		padding: 0 10px;
+		color: rgb(249,248,247);
+		text-decoration: none;
+	}
+	nav[role=navigation] a:hover {
+		background: rgba(255,255,255,0.2);
+		text-decoration: underline;
+	}
+/* End of main navigation */
+
+
+
+/* Footer */
+footer {
+	background: rgb(255,29,0);
+	background: -moz-linear-gradient(top, rgba(255,29,0,1) 85%, rgba(253,178,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(85%,rgba(255,29,0,1)), color-stop(100%,rgba(253,178,0,1)));
+	background: -webkit-linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	background: linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+	
+	/*
+		The footer should have a smaller font, 10px.
+		With a basic em of 16px that means 0,625em.
+	*/
+	font-size: 0.625em;
+	padding: 1em;
+	line-height: 1.5em;
+}
