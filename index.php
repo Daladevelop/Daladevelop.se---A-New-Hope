@@ -4,11 +4,22 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php bloginfo('title')?></title>
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
 </head>
 <body>
 
 	<header role="banner">
-		<?php bloginfo('title') ?>
+		<?php
+			/*
+				If it's the startpage, this is the
+				main heading (h1), otherwise just give
+				it a span
+			*/
+			if (is_home()) :?>
+			<h1><?php bloginfo('title') ?></h1>
+			<?php else :?>
+			<span><?php bloginfo('title') ?></span>
+			<?php endif; ?>
 	</header>
 
 	<nav role="navigation">

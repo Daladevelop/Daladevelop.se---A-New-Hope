@@ -1,3 +1,113 @@
 /*
 	Template Name: Daladevelop: Episode IV - A New Hope
+	Author: Daladevelop
 */
+
+/*
+	We begin with the layout for small screens (phones etc.) and
+	then add media queries for less small screens.
+	
+	First breaking point is above 480px (iPhone in landscape and I
+	assume most Android phones as well),
+	
+	The height (and some width) is done with em. 1 basic em is
+	16px. iPhone in portrait (480px height) will get 30 lines.
+	Using 1.5 em line-height means 20 lines of text will be
+	visible.
+*/
+
+/* First, reset everything */
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/* End of reset. Now start making things pretty */
+
+/*
+	Basic colors (derived from the logo
+	Dark (instead of black) : rgb (66, 74, 71)
+	Light (instead of white) : rgb (249, 248, 247)
+	(Use ordinary black and white where appropriate)
+*/
+
+body {
+	/* Sizes */
+	width: 100%;
+	font-size: 16px;
+	line-height: 1.5em;
+
+	/* Colors */
+	background: #fff;
+}
+
+/*
+	The header will get to occupy 1/2 of the iPhone height
+	480px / 2 = 240px
+	At 16px per em that means 15em.
+*/
+header[role=banner] {
+	/* Sizes */
+	height: 13em;
+	padding: 1em;
+
+	/* Colors */
+	background-color: rgb(66, 74, 71);
+	background-image: url('pix/heart.png');
+	background-position: 50% 16px;
+	background-repeat: no-repeat;
+	color: rgb(249, 248, 247);
+}
+
+	header[role=banner] h1, header[role=banner] span { /* The logo text */
+		display: block;
+		font-size: 2em;
+		margin-top: 5.25em;
+		text-align: center;
+		font-weight: bold;
+	}
