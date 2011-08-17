@@ -106,14 +106,15 @@ body {
 */
 header[role=banner] {
 	/* Sizes */
-	height: 11em;
+	height: 10em;
 	padding: 1em;
 
 	/* Colors */
 	background-color: rgb(66, 74, 71);
-	background-image: url('pix/heart.png');
-	background-position: 50% 16px;
+	background-image: url('pix/logo-vertical.png');
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	background-size: 95%;
 	color: rgb(249, 248, 247);
 	
 	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6);
@@ -127,11 +128,6 @@ header[role=banner] {
 		margin-top: 4.75em;
 		text-align: center;
 		font-weight: bold;
-		
-		background-image: url('pix/daladevelop-horizontal-white.png');
-		background-repeat: none;
-		background-position: 0px 0px;
-		background-size: 100% 100%;
 	}
 	
 	header[role=banner] h1 a, header[role=banner] span a {
@@ -145,9 +141,14 @@ header[role=banner] {
 	be full-width
 	
 	10px padding at 16px per em = 0,625em
+	
+	Also, it gets a maximum width that has a comfortable
+	line-length.
 */
 article[role=article] {
 	padding: 0.625em;
+	max-width: 768px;
+	margin: 0 auto;
 }
 
 /* Main navigation */
@@ -222,6 +223,12 @@ footer {
 	line-height: 1.5em;
 }
 
+footer p {
+	max-width: 768px;
+	position: relative;
+	margin: 0 auto;
+}
+
 
 
 /* Time for media queries */
@@ -248,6 +255,9 @@ footer {
 				display: -webkit-box;
 				display: -moz-box;
 				display: box;
+				
+				max-width: 768px;
+				margin: 0 auto;
 			}
 			nav[role=navigation] ul li {
 				-webkit-box-orient: horizontal;
@@ -269,15 +279,20 @@ footer {
 	
 	
 	/*
-		Change to a different position
-		of the logo
+		Change to a different logo
 	*/
 		header[role=banner] {
 			background-position: 16px 16px;
-			height: 9em;
+			height: 8em;
+			
+			background-image: url('pix/logo-horizontal.png');
+			background-position: 50% 0.5em;
+			background-repeat: no-repeat;
+			background-size: auto;
+			color: rgb(249, 248, 247);
 		}
 		header[role=banner] h1, header[role=banner] span { /* The logo text */
-		margin-top: 1em;
+		/*margin-top: 1em;
 		margin-left: 6em;
 		text-align: center;
 		font-weight: bold;
@@ -287,20 +302,9 @@ footer {
 		background-image: url('pix/daladevelop-vertical-white.png');
 		background-repeat: none;
 		background-position: 0px 0px;
-		background-size: 308px 105px;
+		background-size: 308px 105px;*/
 	}
 	/*
 		Logo fixed
 	*/
-}
-
-/*
-	Bigger than 768px (portrait for many 10" tablets is 768px)
-	* Stop the menu from flexing. Make it fixed width and centered.
-*/
-@media all and (min-width: 769px) {
-	nav[role=navigation] ul {
-		width: 768px;
-		margin: 0 auto;
-	}
 }
