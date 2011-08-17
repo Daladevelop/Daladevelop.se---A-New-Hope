@@ -225,3 +225,82 @@ footer {
 
 
 /* Time for media queries */
+@media all and (min-width: 481px) {
+	
+	/*
+		Put the header and navigation together.
+	*/
+		header[role=banner] {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		nav[role=navigation] {
+			margin: 0 0 1em 0;
+			border-radius: 0px;
+			width: 100%;
+			padding: 0;
+		}
+		/*
+			Line up the menu items next to each other
+		*/
+			nav[role=navigation] ul {
+				display: -webkit-box;
+				display: -moz-box;
+				display: box;
+			}
+			nav[role=navigation] ul li {
+				-webkit-box-orient: horizontal;
+				-webkit-box-flex: 1;
+				
+				-moz-box-orient: horizontal;
+				-moz-box-flex: 1;
+				
+				box-orient: horizontal;
+				box-flex: 1;
+			}
+			nav[role=navigation] ul li a {
+				text-align: center;
+				padding: 10px;
+			}
+	/*
+		Navigation fixed
+	*/
+	
+	
+	/*
+		Change to a different position
+		of the logo
+	*/
+		header[role=banner] {
+			background-position: 16px 16px;
+			height: 9em;
+		}
+		header[role=banner] h1, header[role=banner] span { /* The logo text */
+		margin-top: 1em;
+		margin-left: 6em;
+		text-align: center;
+		font-weight: bold;
+		height: 105px;
+		width: 308px;
+		
+		background-image: url('pix/daladevelop-vertical-white.png');
+		background-repeat: none;
+		background-position: 0px 0px;
+		background-size: 308px 105px;
+	}
+	/*
+		Logo fixed
+	*/
+}
+
+/*
+	Bigger than 768px (portrait for many 10" tablets is 768px)
+	* Stop the menu from flexing. Make it fixed width and centered.
+*/
+@media all and (min-width: 769px) {
+	nav[role=navigation] ul {
+		width: 768px;
+		margin: 0 auto;
+	}
+}
