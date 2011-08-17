@@ -16,9 +16,9 @@
 				it a span
 			*/
 			if (is_home()) :?>
-			<h1><?php bloginfo('title') ?></h1>
+			<h1><a href="<?php bloginfo('url')?>"><?php bloginfo('title') ?></a></h1>
 			<?php else :?>
-			<span><?php bloginfo('title') ?></span>
+			<span><a href="<?php bloginfo('url')?>"><?php bloginfo('title') ?></a></span>
 			<?php endif; ?>
 	</header>
 

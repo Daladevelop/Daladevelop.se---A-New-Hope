@@ -102,13 +102,11 @@ body {
 /* End of typography */
 
 /*
-	The header will get to occupy 1/2 of the iPhone height
-	480px / 2 = 240px
-	At 16px per em that means 15em.
+	
 */
 header[role=banner] {
 	/* Sizes */
-	height: 13em;
+	height: 11em;
 	padding: 1em;
 
 	/* Colors */
@@ -126,9 +124,19 @@ header[role=banner] {
 	header[role=banner] h1, header[role=banner] span { /* The logo text */
 		display: block;
 		font-size: 2em;
-		margin-top: 5.25em;
+		margin-top: 4.75em;
 		text-align: center;
 		font-weight: bold;
+		
+		background-image: url('pix/daladevelop-horizontal-white.png');
+		background-repeat: none;
+		background-position: 0px 0px;
+		background-size: 100% 100%;
+	}
+	
+	header[role=banner] h1 a, header[role=banner] span a {
+		display: block;
+		opacity: 0;
 	}
 
 /*
@@ -213,3 +221,7 @@ footer {
 	padding: 1em;
 	line-height: 1.5em;
 }
+
+
+
+/* Time for media queries */
