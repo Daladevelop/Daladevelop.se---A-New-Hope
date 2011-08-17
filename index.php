@@ -26,7 +26,7 @@
 		<?php wp_nav_menu(array('container' => false)); ?>
 	</nav>
 
-	<section>
+	<section name="main-content">
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
@@ -45,17 +45,18 @@
 				</article>
 			<?php endwhile; ?>
 		<?php endif; ?>
+		<?php if (is_front_page()) :?>
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Startsidans RSS-box') ); ?>
+		<?php endif; ?>
 	</section>
-	
-	<?php if (is_front_page()) :?>
-		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Startsidans RSS-box') ); ?>
-	<?php endif; ?>
 
-	<footer>
+	<footer id="footer">
 		<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 	</footer>
 
+	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script src="<?php bloginfo('template_url') ?>/scripts/looks.js"></script>
 </body>
 </html>
