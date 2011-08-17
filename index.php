@@ -15,7 +15,7 @@
 				main heading (h1), otherwise just give
 				it a span
 			*/
-			if (is_home()) :?>
+			if (is_front_page()) :?>
 			<h1><a href="<?php bloginfo('url')?>"><?php bloginfo('title') ?></a></h1>
 			<?php else :?>
 			<span><a href="<?php bloginfo('url')?>"><?php bloginfo('title') ?></a></span>
@@ -36,7 +36,7 @@
 							If it's the startpage the article headings is
 							h2, otherwise it's h1
 						*/
-						if (is_home()) :?>
+						if (is_front_page()) :?>
 						<h2 role="heading"><?php the_title(); ?></h2>
 						<?php else :?>
 						<h1 role="heading"><?php the_title(); ?></h1>
@@ -46,6 +46,10 @@
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</section>
+	
+	<?php if (is_front_page()) :?>
+		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Startsidans RSS-box') ); ?>
+	<?php endif; ?>
 
 	<footer>
 		<p>

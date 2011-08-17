@@ -99,6 +99,13 @@ body {
 	h3 {
 		font-size: 1.5em;
 	}
+	body {
+		font-family: "Times New Roman";
+	}
+	nav[role=navigation] a {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: bold;
+	}
 /* End of typography */
 
 /*
@@ -233,6 +240,13 @@ footer p {
 
 /* Time for media queries */
 @media all and (min-width: 481px) {
+	/*
+		Larger screens means justified text
+		is nice.
+	*/
+	body {
+		text-align: justify;
+	}
 	
 	/*
 		Put the header and navigation together.
