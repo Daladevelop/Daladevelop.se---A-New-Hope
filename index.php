@@ -57,6 +57,5 @@
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-	<script src="<?php bloginfo('template_url') ?>/scripts/looks.js"></script>
 </body>
 </html>

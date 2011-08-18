@@ -252,13 +252,13 @@ footer {
 		With a basic em of 16px that means 0,625em.
 	*/
 	font-size: 0.625em;
-	padding: 1em;
 	line-height: 1.5em;
 }
 
 footer p {
 	max-width: 768px;
 	position: relative;
+	padding: 1em;
 	margin: 0 auto;
 }
 
@@ -340,6 +340,13 @@ footer p {
 	/*
 		Logo fixed
 	*/
+	
+	
+	footer {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+	}
 }
 
 
