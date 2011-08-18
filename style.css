@@ -157,6 +157,10 @@ article[role=article] {
 	padding: 0.625em;
 	max-width: 768px;
 	margin: 0 auto;
+	
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
 
 /*
@@ -356,7 +360,7 @@ footer p {
 */
 @media all and (min-width: 960px) {
 	nav[role=navigation] ul {
-		width: 960px;
+		width: 940px;
 		max-width: none;
 	}
 	section {
