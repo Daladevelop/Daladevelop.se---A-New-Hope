@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php bloginfo('title')?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
+	<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
 </head>
 <body>
 

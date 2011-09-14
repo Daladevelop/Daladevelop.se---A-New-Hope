@@ -90,6 +90,7 @@ body {
 /* Some basic typography */
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: bold;
+		font-family: 'Lekton';
 	}
 	h1 {
 		font-size: 2.4em;
@@ -198,6 +199,7 @@ body > section > aside h3{margin: 0 0 1em 0; }
 body > section > aside li:nth-child(even) {background-color:#efefef; padding: 5px;}
 
 body > section > aside li cite:before {content: " av "}
+body > section > aside li cite{font-style: italic; ;}
 /* Main navigation */
 	nav[role=navigation] {
 		/*
