@@ -116,7 +116,7 @@ body {
 header[role=banner] {
 	/* Sizes */
 	height: 10em;
-	padding: 1em 1em 3em 1em;
+	padding: 3em 1em 3em 1em;
 	/* Colors */
 	background-color: rgb(66, 74, 71);
 	background-image: url('pix/logo-vertical.png');
@@ -214,7 +214,7 @@ body > section > aside li cite:before {content: " av "}
 		background: -o-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
 		background: -ms-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
 		background: linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
-		*/
+		
 		background: rgb(53,101,255);
 		background: -moz-linear-gradient(top, rgba(53,101,255,1) 0%, rgba(48,42,255,1) 15%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,101,255,1)), color-stop(15%,rgba(48,42,255,1)));
@@ -222,7 +222,8 @@ body > section > aside li cite:before {content: " av "}
 		background: -o-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
 		background: -ms-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
 		background: linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
-		
+	*/
+		background-color: #333; 
 		width: 240px;
 		padding: 10px 0;
 		
@@ -323,7 +324,7 @@ footer p {
 			height: 8em;
 			
 			background-image: url('pix/logo-horizontal.png');
-			background-position: 50% 0.5em;
+			background-position: 50% 2em;
 			background-repeat: no-repeat;
 			background-size: auto;
 			color: rgb(249, 248, 247);
