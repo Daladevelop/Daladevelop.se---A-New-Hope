@@ -158,7 +158,8 @@ article[role=article] {
 	padding: 0.625em;
 	max-width: 768px;
 	margin: 0 auto;
-	
+	font-size: 1.2em;
+	line-height: 1.4em;	
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 	hyphens: auto;
@@ -170,7 +171,7 @@ article[role=article] {
 */
 body > section > aside {
 	padding: 2em;
-	margin-top: 40px; 
+	margin-top: 45px; 
 	background-color: #fff;
 	box-shadow: 0px 0px 7px #cecece;
 	line-height: 1.5em;
@@ -216,7 +217,7 @@ body > section > aside li cite{font-style: italic; ;}
 		background: -o-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
 		background: -ms-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
 		background: linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
-		
+*/		
 		background: rgb(53,101,255);
 		background: -moz-linear-gradient(top, rgba(53,101,255,1) 0%, rgba(48,42,255,1) 15%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,101,255,1)), color-stop(15%,rgba(48,42,255,1)));
@@ -224,7 +225,7 @@ body > section > aside li cite{font-style: italic; ;}
 		background: -o-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
 		background: -ms-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
 		background: linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
-	*/
+	
 		background-color: #333; 
 		width: 240px;
 		padding: 10px 0;
@@ -253,13 +254,25 @@ body > section > aside li cite{font-style: italic; ;}
 
 /* Footer */
 footer {
-	
+	background: rgb(255,29,0);
+	background: -moz-linear-gradient(top, rgba(255,29,0,1) 85%, rgba(253,178,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(85%,rgba(255,29,0,1)), color-stop(100%,rgba(253,178,0,1)));
+	background: -webkit-linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	background: linear-gradient(top, rgba(255,29,0,1) 85%,rgba(253,178,0,1) 100%);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.6), -4px -4px 10px rgba(0,0,0,0.2);
+
+
 	/*
 		The footer should have a smaller font, 10px.
 		With a basic em of 16px that means 0,625em.
 	*/
 	font-size: 0.625em;
 	line-height: 1.5em;
+	height: 2em;
 }
 
 footer p {
@@ -350,7 +363,7 @@ footer p {
 	
 	
 	footer {
-		position: absolute;
+		position: fixed;
 		bottom: 0px;
 		width: 100%;
 	}
@@ -369,6 +382,7 @@ footer p {
 	section {
 		width: 1000px;
 		margin: 0 auto;
+		
 		position: relative;
 	}
 
@@ -383,7 +397,7 @@ footer p {
 		
 		position: absolute;
 		right: -30px;
-		top: 0;
+		top: 35px;
 		
 	}
 	
