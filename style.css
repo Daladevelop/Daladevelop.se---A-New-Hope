@@ -93,10 +93,12 @@ body {
 		font-family: 'Lekton';
 	}
 	h1 {
-		font-size: 2.4em;
+		font-size: 4em;
+		line-height: 2em;
+		margin: 0 0 1em 0;
 	}
 	h2 {
-		font-size: 4em;
+		font-size: 3em;
 		margin: 0.8em 0 0.8em 0; 
 	}
 	h3 {
@@ -108,6 +110,13 @@ body {
 	nav[role=navigation] a {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-weight: bold;
+	}
+	strong,b{
+		font-weight: bold;
+	}
+
+	i,cite{
+		font-style: italic; 
 	}
 /* End of typography */
 
