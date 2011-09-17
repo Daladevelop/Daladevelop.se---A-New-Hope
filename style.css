@@ -228,8 +228,6 @@ body > section > aside li cite{font-style: italic; ;}
 		background: -ms-linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
 		background: linear-gradient(top, rgba(253,178,0,1) 0%,rgba(255,29,0,1) 15%);
 */		
-		background-color: #3565ff;
-		
 		background: rgb(53,101,255);
 		background: -moz-linear-gradient(top, rgba(53,101,255,1) 0%, rgba(48,42,255,1) 15%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,101,255,1)), color-stop(15%,rgba(48,42,255,1)));
@@ -237,7 +235,8 @@ body > section > aside li cite{font-style: italic; ;}
 		background: -o-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
 		background: -ms-linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
 		background: linear-gradient(top, rgba(53,101,255,1) 0%,rgba(48,42,255,1) 15%);
-	 
+	
+		background-color: #333; 
 		width: 240px;
 		padding: 10px 0;
 		
@@ -311,6 +310,7 @@ footer p {
 			border-radius: 0px;
 			width: 100%;
 			padding: 0;
+			text-align: center;
 		}
 		/*
 			Line up the menu items next to each other
