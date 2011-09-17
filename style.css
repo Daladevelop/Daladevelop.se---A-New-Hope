@@ -1,0 +1,148 @@
+/* First, reset everything */
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/* End of reset. Now start making things pretty */
+
+body {
+	/* Sizes */
+	width: 100%;
+	max-width: 748px;
+	position: relative;
+	margin: 0 auto;
+	
+	/* Typography */
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.3em;
+	
+	/* Colors */
+	background: #565656;
+	color: #fff;
+}
+
+header, nav[role=navigation], article {
+	padding: 10px;
+}
+
+header[role=banner] {
+	height: 10.2142851em; /* 143px / 14 */
+	background: #5c5c5c;
+	overflow: hidden;
+}
+
+header[role=banner] h1 {
+	font-size: 6em;
+	line-height: 1.5em;
+	display: block;
+	text-align: center;
+}
+header[role=banner] h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Some headers */
+	h1, h2, h3, h4 {
+		font-family: "Lobster";
+	}
+	h2 {
+		font-size: 4em;
+	}
+	h3 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h2, h3, h4 {line-height: 1.5em;}
+/* End of some headers */
+
+/* Main navigation */
+	nav[role=navigation] {
+		border: 1px solid #2f2f2f;
+		background: rgb(62,62,62); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(62,62,62,1) 70%, rgba(35,35,35,1) 100%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,rgba(62,62,62,1)), color-stop(100%,rgba(35,35,35,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* IE10+ */
+		background: linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* W3C */
+	
+		width: 200px;
+		position: relative;
+		margin: 0 auto;
+		
+		padding: 0 10px;
+	}
+	
+	nav[role=navigation] ul {
+		padding: 0;
+	}
+	nav[role=navigation] ul li {
+		border-bottom: 1px solid #2f2f2f;
+		height: 2em;
+	}
+	nav[role=navigation] ul li:last-of-type {
+		border-bottom: none;
+	}
+	nav[role=navigation] ul li a {
+		display: block;
+		font-size: 1.25em;
+		line-height: 1.75em;
+		
+		color: #fff;
+		text-decoration: none;
+	}
