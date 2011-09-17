@@ -335,6 +335,27 @@ footer p {
 				text-align: center;
 				padding: 10px;
 			}
+			
+			/*
+				If the browser doesn't support Flexbox
+			*/
+			.no-flexbox nav[role=navigation] ul {
+				display: block;
+				max-width: 1000px;
+				width: 1000px;
+				height: 2em;
+				text-align: center;
+				position: relative;
+				margin: 0 auto;
+			}
+			.no-flexbox nav[role=navigation] ul li {
+				width: 200px;
+				float: left;
+				height: 2em;
+			}
+			.no-flexbox nav[role=navigation] ul li a {
+				line-height: 2em;
+			}
 	/*
 		Navigation fixed
 	*/

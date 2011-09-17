@@ -51,9 +51,6 @@
 		<?php endif; ?>
 	</section>
 
-	<footer id="footer">
-	</footer>
-
-	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<?php get_footer(); ?>
 </body>
 </html>
