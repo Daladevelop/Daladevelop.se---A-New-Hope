@@ -1,4 +1,5 @@
 <?php
+	echo "<h1>Emil</h1>";
 	$startpagePosts = new WP_Query();
 	
 	$args = array(
@@ -13,7 +14,7 @@
 	$startpagePosts->query($args);
 	while($startpagePosts->have_posts()): $startpagePosts->the_post(); ?>
 		<h2><?php the_title(); ?></h2>
-	
+			
 
 
 
