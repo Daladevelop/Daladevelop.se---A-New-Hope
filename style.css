@@ -253,6 +253,7 @@ body > section > aside li cite{font-style: italic; ;}
 		padding: 0 10px;
 		color: rgb(249,248,247);
 		text-decoration: none;
+		line-height: 1.25em;
 	}
 	nav[role=navigation] a:hover {
 		background: rgba(255,255,255,0.2);
