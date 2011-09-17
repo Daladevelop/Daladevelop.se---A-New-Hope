@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php bloginfo('title')?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
-	<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -33,11 +33,6 @@
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 				<article role="article">
-					<?php $post_formats = get_theme_support('post-formats');
-						echo 'Före';
-						print_r($post_formats);
-						echo 'Efter';
-					 ?>
 					<?php
 						/*
 							If it's the startpage the article headings is
