@@ -50,7 +50,8 @@
 						<?php endif; ?>
 						<?php the_content(); ?>
 				</article>
-			<?php endwhile; ?>
+			<?php include(dirname(__FILE__)."/_templates/startpage_slider.php"); ?>
+		<?php endwhile; ?>
 		<?php endif; ?>
 		<?php if (is_front_page()) :?>
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Startsidans RSS-box') ); ?>
