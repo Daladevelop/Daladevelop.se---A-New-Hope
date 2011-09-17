@@ -26,7 +26,7 @@
 		<?php wp_nav_menu(array('container' => false)); ?>
 	</nav>
 
-	<section name="main-content">
+	<section id="main-content">
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
