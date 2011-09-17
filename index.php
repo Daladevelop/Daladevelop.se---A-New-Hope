@@ -24,7 +24,7 @@
 	</header>
 
 	<nav role="navigation">
-		<?php wp_nav_menu(array('container' => false)); ?>
+		<?php wp_nav_menu(array('container' => false, 'depth' => 1)); ?>
 	</nav>
 
 	<section id="main-content">
