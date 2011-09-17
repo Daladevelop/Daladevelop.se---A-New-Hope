@@ -18,7 +18,7 @@
 				it a span
 			*/
 			if (is_front_page()) :?>
-			<h1><a href="<?php bloginfo('url')?>"><?php bloginfo('title') ?> TEST</a></h1>
+			<h1><a href="<?php bloginfo('url')?>"><?php bloginfo('title') ?></a></h1>
 			<?php else :?>
 			<span><a href="<?php bloginfo('url')?>"><?php bloginfo('title') ?></a></span>
 			<?php endif; ?>
