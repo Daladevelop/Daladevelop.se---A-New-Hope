@@ -3,7 +3,7 @@
 	$startpagePosts = new WP_Query();
 	
 	$args = array(
-		'post_type' => 'post,page,projekt',
+		'post_type' => 'any',
 		'meta_key' => 'show_on_startpage',
 		'meta_value' => 1,
 		'meta_key' => 'priority',
