@@ -8,6 +8,7 @@ This is a second attempt to create a WordPress theme for Daladevelop.se. In orde
 Goals
 ----
 Some goals for this theme:
+
 * Create something that looks good but first and foremost promote good readability.
 * Semantic markup is crucial.
 * WAI-ARIA-roles should be used when appropriate.
