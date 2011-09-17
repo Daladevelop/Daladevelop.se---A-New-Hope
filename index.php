@@ -33,6 +33,11 @@
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 				<article role="article">
+					<?php $post_formats = get_theme_support('post-formats');
+						echo 'Före';
+						print_r($post_formats);
+						echo 'Efter';
+					 ?>
 					<?php
 						/*
 							If it's the startpage the article headings is
