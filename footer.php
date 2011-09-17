@@ -1,4 +1,8 @@
 <footer id="footer">
+
+	<span id="tagline">
+		<?php bloginfo('description'); ?>
+	</span>
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
