@@ -6,9 +6,9 @@
 		'post_type' => 'any',
 		'meta_key' => 'show_on_startpage',
 		'meta_value' => 1,
+		'order_by' => 'meta_value',
 		'meta_key' => 'priority',
-		'posts_per_page' => 3,
-		'order_by' => 'priority'
+		'posts_per_page' => 3
 	);
 
 	$startpagePosts->query($args);
