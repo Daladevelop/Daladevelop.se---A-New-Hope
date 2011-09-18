@@ -78,12 +78,16 @@ header, nav[role=navigation], article {
 
 nav[role=navigation], article {
 	max-width: 748px;
+	position: relative;
+	margin: 0 auto;
 }
 	
 header[role=banner] {
 	height: 10.2142851em; /* 143px / 14 */
 	background: #5c5c5c;
 	overflow: hidden;
+	
+	background: url('pix/logo-vertical.png') no-repeat 50% 2em;
 }
 
 header[role=banner] h1, header[role=banner] span {
@@ -92,6 +96,8 @@ header[role=banner] h1, header[role=banner] span {
 	display: block;
 	text-align: center;
 	font-family: "Lobster";
+	
+	opacity: 0;
 }
 header[role=banner] h1 a, header[role=banner] span a {
 	color: #fff;
@@ -200,4 +206,48 @@ header[role=banner] h1 a, header[role=banner] span a {
 	#frontpage-slider article:nth-of-type(2) {
 		background: #565656;
 	}
+	
+	/* The "Kika" link */
+	#frontpage-slider article > a {
+		background: rgb(236,156,52); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(236,156,52,1) 56%, rgba(235,104,43,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(56%,rgba(236,156,52,1)), color-stop(100%,rgba(235,104,43,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(236,156,52,1) 56%,rgba(235,104,43,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(236,156,52,1) 56%,rgba(235,104,43,1) 100%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, rgba(236,156,52,1) 56%,rgba(235,104,43,1) 100%); /* IE10+ */
+		background: linear-gradient(top, rgba(236,156,52,1) 56%,rgba(235,104,43,1) 100%); /* W3C */
+		
+		display: block;
+		height: 32px;
+		line-height: 32px;
+		width: 129px;
+		border-radius: 15px;
+		
+		margin-top: 1em;
+		
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	#frontpage-slider article > a:after {content: '!';}
 /* End of arrow headers */
+
+
+/* Media queries for screens that are bigger than 480px */
+@media all and (min-width: 481px) {
+	/* Move main navigation, resize header and move logo */
+	header[role=banner] {
+		height: 14.2857143em; /* 200px */
+		background-position: 100% 2em;
+	}
+	
+	nav[role=navigation] {
+		position: absolute;
+		top: 0;
+		left: 1em;
+	}
+	
+	
+	
+} /* End of >481px
