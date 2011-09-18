@@ -4,7 +4,7 @@
 	
 	$args = array(
 		'post_type' => 'any',
-		'orderby' => 'meta_value',
+		'orderby' => 'meta_value_num',
 		'meta_key' => 'priority',
 		'posts_per_page' => 3
 	);
