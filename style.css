@@ -152,14 +152,21 @@ header[role=banner] h1 a {
 /* End of main navigation */
 
 /* Footer */
-footer {
-	background: #2b2d30;
-	padding: 10px;
-}
+	footer {
+		background: #2b2d30;
+		padding: 10px;
+	}
+	
+	footer span#tagline {
+		font-family: "Lobster";
+		font-size: 1.857144286em; /* 26px */
+		line-height: 1em;
+		color: #535353;
+	}
+/* End of footer */
 
-footer span#tagline {
-	font-family: "Lobster";
-	font-size: 1.857144286em; /* 26px */
-	line-height: 1em;
-	color: #535353;
-}
+/* Arrow headers */
+	#frontpage-slider h3 {
+		font-size: 1.42857143em; /* 20px */
+	}
+/* End of arrow headers */
