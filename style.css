@@ -212,8 +212,9 @@ header[role=banner] h1 a, header[role=banner] span a {
 		background: #565656;
 		background: url('pix/bg-noise.png') repeat 0 0;
 	}
+/* End of arrow headers */
 	
-	/* The "Kika" link */
+/* The "Kika" link */
 	#frontpage-slider article > a, #blogexcerpt article > a {
 		background: rgb(236,156,52); /* Old browsers */
 		background: -moz-linear-gradient(top, rgba(236,156,52,1) 56%, rgba(235,104,43,1) 100%); /* FF3.6+ */
@@ -237,14 +238,23 @@ header[role=banner] h1 a, header[role=banner] span a {
 		text-transform: uppercase;
 	}
 	#frontpage-slider article > a:after {content: '!';}
+/* End of "Kika" link */
+	
+/* The Twitter box */
 	body #twitter {position: relative; }
+	
 	body #twitter #a-horse-with-no-name{
 		position:absolute; 
 		top: 0;
-		right: 0;
+		right: -40px;
 		z-index: 99999;
 	}
-/* End of arrow headers */
+	
+	#twitter {
+		margin: 1em 0 2em 10px;
+		max-width: 440px;
+	}
+/* End of twitter */
 
 
 /* Media queries for screens that are bigger than 480px */
