@@ -91,6 +91,7 @@ header[role=banner] h1, header[role=banner] span {
 	line-height: 1.5em;
 	display: block;
 	text-align: center;
+	font-family: "Lobster";
 }
 header[role=banner] h1 a, header[role=banner] span a {
 	color: #fff;
@@ -168,5 +169,12 @@ header[role=banner] h1 a, header[role=banner] span a {
 /* Arrow headers */
 	#frontpage-slider h3 {
 		font-size: 1.42857143em; /* 20px */
+		-webkit-border-image: url('pix/blueflag-border.png') 17 17 17 17;
+		-moz-border-image: url('pix/blueflag-border.png') 17 17 17 17;
+		-ms-border-image: url('pix/blueflag-border.png') 17 17 17 17;
+		-o-border-image: url('pix/blueflag-border.png') 17 17 17 17;
+		border-image: url('pix/blueflag-border.png') 17 17 17 17;
+		border-width: 17px;
+}
 	}
 /* End of arrow headers */
