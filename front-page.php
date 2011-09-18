@@ -46,7 +46,7 @@
 				  interval: 30000,
 				  title: '',
 				  subject: '',
-				  width: 420,
+				  width: 360,
 				  height: 220,
 				  theme: {
 			    shell: {
