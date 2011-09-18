@@ -86,13 +86,13 @@ header[role=banner] {
 	overflow: hidden;
 }
 
-header[role=banner] h1 {
+header[role=banner] h1, header[role=banner] span {
 	font-size: 6em;
 	line-height: 1.5em;
 	display: block;
 	text-align: center;
 }
-header[role=banner] h1 a {
+header[role=banner] h1 a, header[role=banner] span a {
 	color: #fff;
 	text-decoration: none;
 }
