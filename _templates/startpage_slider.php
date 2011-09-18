@@ -6,7 +6,7 @@
 		'post_type' => 'any',
 		'meta_key' => 'show_on_startpage',
 		'meta_value' => 1,
-		'meta_key' => 'priority',
+//		'meta_key' => 'priority',
 		'orderby' => 'meta_value',
 //		'posts_per_page' => 3
 	);
