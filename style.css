@@ -68,7 +68,8 @@ body {
 	line-height: 1.3em;
 	
 	/* Colors */
-	background: #565656;
+	background-color: #5c5c5c;
+	background: url('pix/bg-noise.png') repeat 0 0;
 	color: #fff;
 }
 
@@ -191,11 +192,11 @@ header[role=banner] h1 a, header[role=banner] span a {
 /* Arrow headers */
 	#frontpage-slider h3 {
 		font-size: 1.42857143em; /* 20px */
-		-webkit-border-image: url('pix/blueflag-border.png') 17 17 17 17;
-		-moz-border-image: url('pix/blueflag-border.png') 17 17 17 17;
+		-webkit-border-image: url('pix/blueflag-border.png') 22 22 22 22;
+		/*-moz-border-image: url('pix/blueflag-border.png') 17 17 17 17;
 		-o-border-image: url('pix/blueflag-border.png') 17 17 17 17;
-		border-image: url('pix/blueflag-border.png') 17 17 17 17;
-		border-width: 17px;
+		border-image: url('pix/blueflag-border.png') 17 17 17 17;*/
+		border-width: 22px;
 		width: 200px;
 	}
 	
@@ -418,4 +419,38 @@ header[role=banner] h1 a, header[role=banner] span a {
 		    width: 100%;
 			padding: 5px 0 0 20px;	
 		}
+}
+
+/* Bigger screens, max-width 1020px */
+@media all and (min-width: 769px) {
+
+	/* Position the slider articles */
+		section#frontpage-slider {
+			height: 368px;
+		}
+	
+		section#frontpage-slider article {
+			position: absolute;
+			-webkit-box-sizing: border-box;
+			width: 100%;
+			max-width: none;
+			padding: 2em 4em 2em 50%;
+			background-color: #2B2D30;
+			height: 368px;
+		}
+		
+		section#frontpage-slider article:nth-of-type(2) {
+			background-color: #2B2D30;
+			background-image: none;
+		}
+		
+		section#frontpage-slider article h3 {
+			position: absolute;
+			left: 2em;
+		}
+		
+		section#frontpage-slider article h2 {
+			font-size: 3em; /* 42px */
+		}
+	/* End of slider articles */
 }
