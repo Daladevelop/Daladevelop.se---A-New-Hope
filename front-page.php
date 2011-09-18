@@ -11,6 +11,7 @@
 	</section>
 	
 	<section id="blogexcerpt">
+		
 		<?php
 		$args = array(
 			'posts_per_page' => 1,
@@ -21,7 +22,9 @@
 
 		$oneBlogPost = new WP_Query($args);
 		while($oneBlogPost->have_posts()): $oneBlogPost->the_post(); ?>
-			<h2><?php the_title();?></h2>
+			
+			<h3><?php the_title();?></h3>
+				<span class="thedate"><?php echo get_the_date('Y-m-j'); ?></span>
 			<?php the_excerpt(); ?>
 			<a href="" title="">Läs mer</a>
 			
@@ -30,6 +33,10 @@
 	</section>
 
 	<section id="twitter">
+		
+		<h3>#Daladevelop</h3>
+		<img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/pix/a-horse-with-no-name.png" alt="Gnäggs" id="a-horse-with-no-name" />
+		<section id="twitterbox">
 		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 			<script>
 				new TWTR.Widget({
@@ -63,8 +70,10 @@
 			    behavior: 'default'
 		  	}
 		}).render().start();
-	</script>
+		</script>
+		</section>
 	</section>
+	<br style="clear:both;"/>
 	<?php get_footer(); ?>
 </body>
 </html>
