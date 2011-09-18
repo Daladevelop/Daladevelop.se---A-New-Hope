@@ -317,6 +317,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 			
 			background: none;
 			border: none;
+			padding: 0;
 			/*background: url('pix/bg-gradient.png') no-repeat 0 0;*/
 		}
 		nav[role=navigation] ul {
@@ -381,17 +382,30 @@ header[role=banner] h1 a, header[role=banner] span a {
 			-webkit-box-sizing: border-box;
 			float: left;
 			width: 50%;
-			max-width: 342px; /* 768px - gutters (3x 2em (28px)) / 2 = 768 - 84 = 684px / 2 )= 342px */
-			padding: 2em;
+			/*max-width: 342px; /* 768px - gutters (3x 2em (28px)) / 2 = 768 - 84 = 684px / 2 )= 342px */
 			margin:0 0 50px 0; 	
 			position: relative;
 		}
-		body #twitter {
-			padding: 2em 2em 2em 2em;
+		body #blogexcerpt {
+			padding: 2em 1em 2em 2em;
+			margin: 0;
 		}
+		body #blogexcerpt article {
+			padding: 0;
+		}
+		
+		body #twitter {
+			padding: 2em 2em 2em 1em;
+			margin: 0;
+			/*padding: 2em 2em 2em 2em;*/
+		}
+		body #twitter #twitterbox {
+			-webkit-box-sizing: border-box;
+		}
+		
 		body #twitter #a-horse-with-no-name {
 			position: absolute;
-			right: -40px;
+			right: 0;
 			top: 45px;
 			z-index: 9999;
 		}
