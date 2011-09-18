@@ -233,6 +233,13 @@ header[role=banner] h1 a, header[role=banner] span a {
 		text-transform: uppercase;
 	}
 	#frontpage-slider article > a:after {content: '!';}
+	body #twitter {position: relative; }
+	body #twitter #a-horse-with-no-name{
+		position:absolute; 
+		top: 0;
+		right: 0;
+		z-index: 99999;
+	}
 /* End of arrow headers */
 
 
@@ -324,8 +331,8 @@ header[role=banner] h1 a, header[role=banner] span a {
 		/* Twitter stuff */
 		body #twitter #twitterbox {
 			background-color: #7d7d7d;
-			border-top-left-radius: 45px; 
-			border-bottom-right-radius: 45px;
+			border-top-left-radius: 25px; 
+			border-bottom-right-radius: 25px;
 		    width: 100%;	
 		}
 }
