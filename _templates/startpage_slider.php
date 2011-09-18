@@ -14,6 +14,7 @@
 <?php endif;
 	$slide = 1; 
 	while($startpagePosts->have_posts()): $startpagePosts->the_post(); ?>
+		<article class="slide_<?php echo $slide++; ?>">
 		<?php if(get_post_type() == 'projekt'): ?>
 			<h3>Direkt från Lekstugan</h3>
 		<?php elseif(get_post_type() == 'page'): ?>
@@ -21,7 +22,6 @@
 		<?php elseif(get_post_type() == 'post'): ?>
 			<h3>Från bloggen</h3>
 		<?php endif; ?>
-		<article class="slide_<?php echo $slide++; ?>">
 			<h2><?php the_title(); ?></h2>
 			<?php the_excerpt(); ?>
 
