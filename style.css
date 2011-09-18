@@ -214,7 +214,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	}
 	
 	/* The "Kika" link */
-	#frontpage-slider article > a {
+	#frontpage-slider article > a, #blogexcerpt article > a {
 		background: rgb(236,156,52); /* Old browsers */
 		background: -moz-linear-gradient(top, rgba(236,156,52,1) 56%, rgba(235,104,43,1) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(56%,rgba(236,156,52,1)), color-stop(100%,rgba(235,104,43,1))); /* Chrome,Safari4+ */

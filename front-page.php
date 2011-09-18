@@ -22,12 +22,12 @@
 
 		$oneBlogPost = new WP_Query($args);
 		while($oneBlogPost->have_posts()): $oneBlogPost->the_post(); ?>
-			
-			<h3><?php the_title();?></h3>
-				<span class="thedate"><?php echo get_the_date('Y-m-j'); ?></span>
-			<?php the_excerpt(); ?>
-			<a href="" title="">Läs mer</a>
-			
+			<article>
+				<h3><?php the_title();?></h3>
+					<span class="thedate"><?php echo get_the_date('Y-m-j'); ?></span>
+				<?php the_excerpt(); ?>
+				<a href="" title="">Läs mer</a>
+			</article>
 		<?php endwhile; ?>
 		
 	</section>
