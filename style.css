@@ -146,3 +146,17 @@ header[role=banner] h1 a {
 		color: #fff;
 		text-decoration: none;
 	}
+/* End of main navigation */
+
+/* Footer */
+footer {
+	background: #2b2d30;
+	padding: 10px;
+}
+
+footer span#tagline {
+	font-family: "Lobster";
+	font-size: 1.857144286em; /* 26px */
+	line-height: 1em;
+	color: #535353;
+}
