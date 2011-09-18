@@ -16,7 +16,7 @@
 		<h3>Direkt från Lekstugan</h3>
 	<?php endif;
 	while($startpagePosts->have_posts()): $startpagePosts->the_post(); ?>
-		<h2><?php $startpagePosts->the_title(); ?></h2>
+		<h2><?php the_title(); ?></h2>
 			
 
 
