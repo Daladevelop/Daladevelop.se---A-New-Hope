@@ -125,11 +125,11 @@ header[role=banner] h1 a, header[role=banner] span a {
 		background: -ms-linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* IE10+ */
 		background: linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* W3C */
 	
-		width: 200px;
+		width: 220px;
 		position: relative;
 		margin: 2em auto 3em auto;
 		
-		padding: 0 10px;
+		padding: 0;
 	}
 	
 	nav[role=navigation] ul {
@@ -149,6 +149,11 @@ header[role=banner] h1 a, header[role=banner] span a {
 		
 		color: #fff;
 		text-decoration: none;
+		
+		padding: 0 10px;
+	}
+	nav[role=navigation] ul li a:hover {
+		background: rgba(255,255,255,0.2);
 	}
 /* End of main navigation */
 
@@ -184,7 +189,15 @@ header[role=banner] h1 a, header[role=banner] span a {
 	}
 	
 	#frontpage-slider article {
+		padding-bottom: 4em;
+	}
+	
+	#frontpage-slider article h3 {
 		position: relative;
-		top: -38px;
+		margin-top: -38px;
+	}
+	
+	#frontpage-slider article:nth-of-type(2) {
+		background: #565656;
 	}
 /* End of arrow headers */
