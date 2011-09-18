@@ -16,7 +16,7 @@
 	<?php endif;
 	while($startpagePosts->have_posts()): $startpagePosts->the_post(); ?>
 		<h2><?php the_title(); ?></h2>
-			
+			PRIORITY: <?php meta('priority'); ?><br/>			
 
 
 	<?php endwhile; ?>
