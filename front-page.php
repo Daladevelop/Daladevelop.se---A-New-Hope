@@ -9,12 +9,14 @@
 	<section id="frontpage-slider">
 		<?php include(dirname(__FILE__)."/_templates/startpage_slider.php"); ?>
 	</section>
+	
 	<section id="blogexcerpt">
 		<?php
 		$oneBlogPost = new WP_Query();
 		$args = array(
 			'posts_per_page' => 1,
 			'post_type' => 'post',
+			'orderby' => 'date'
 
 		);
 
