@@ -43,10 +43,10 @@
 				  version: 2,
 				  type: 'search',
 				  search: '#daladevelop',
-				  interval: 30000,
+				  interval: 300,
 				  title: '',
 				  subject: '',
-				  width: 340,
+				  width: 330,
 				  height: 220,
 				  theme: {
 			    shell: {
