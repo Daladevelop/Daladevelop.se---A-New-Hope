@@ -171,10 +171,10 @@ header[role=banner] h1 a, header[role=banner] span a {
 		font-size: 1.42857143em; /* 20px */
 		-webkit-border-image: url('pix/blueflag-border.png') 17 17 17 17;
 		-moz-border-image: url('pix/blueflag-border.png') 17 17 17 17;
-		-ms-border-image: url('pix/blueflag-border.png') 17 17 17 17;
 		-o-border-image: url('pix/blueflag-border.png') 17 17 17 17;
 		border-image: url('pix/blueflag-border.png') 17 17 17 17;
 		border-width: 17px;
+		width: 200px;
 }
 	}
 /* End of arrow headers */
