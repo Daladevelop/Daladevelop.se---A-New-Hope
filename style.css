@@ -252,7 +252,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	body #twitter #a-horse-with-no-name{
 		position:absolute; 
 		top: 0;
-		right: -15px;
+		right: -10px;
 		z-index: 99999;
 	}
 /* End of twitter */
