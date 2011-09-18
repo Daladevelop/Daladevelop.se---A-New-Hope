@@ -2,7 +2,7 @@
 	$startpagePosts = new WP_Query();
 	
 	$args = array(
-		'post_type' => 'any',
+		'post_type' => array('projekt','page','post'),  
 		'orderby' => 'meta_value_num',
 		'meta_key' => 'priority',
 		'posts_per_page' => 3
