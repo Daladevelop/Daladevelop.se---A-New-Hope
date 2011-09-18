@@ -16,9 +16,9 @@
 	while($startpagePosts->have_posts()): $startpagePosts->the_post(); ?>
 		<?php if(get_post_type() == 'projekt'): ?>
 			<h3>Direkt från Lekstugan</h3>
-		<?php elseif(get_post_type() == 'page': ?>
+		<?php elseif(get_post_type() == 'page'): ?>
 			<h3>Med kärlek ♥</h3>
-		<?php elseif(get_post_type() == 'post': ?>
+		<?php elseif(get_post_type() == 'post'): ?>
 			<h3>Från bloggen</h3>
 		<?php endif; ?>
 		<article class="slide_<?php echo $slide++; ?>">
