@@ -12,7 +12,6 @@
 	
 	<section id="blogexcerpt">
 		<?php
-		$oneBlogPost = new WP_Query();
 		$args = array(
 			'posts_per_page' => 1,
 			'post_type' => 'post',
@@ -20,6 +19,7 @@
 
 		);
 
+		$oneBlogPost = new WP_Query($args);
 		while($oneBlogPost->have_posts()): $oneBlogPost->the_post(); ?>
 			<h2><?php the_title();?></h2>
 			<?php the_excerpt(); ?>
