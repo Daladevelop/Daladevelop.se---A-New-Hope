@@ -11,7 +11,6 @@
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 				<article role="article">
-					<?php
 						<?php if(has_post_thumbnail()): ?>
 							<img src="<?php get_post_thumbnail('small'); ?> class="thumb" alt="<?php the_title(); ?>"/>
 						<?php endif; ?>
