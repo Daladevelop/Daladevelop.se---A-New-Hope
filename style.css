@@ -59,7 +59,6 @@
 body {
 	/* Sizes */
 	width: 100%;
-	max-width: 748px;
 	position: relative;
 	margin: 0 auto;
 	
@@ -77,6 +76,10 @@ header, nav[role=navigation], article {
 	padding: 10px;
 }
 
+nav[role=navigation], article {
+	max-width: 748px;
+}
+	
 header[role=banner] {
 	height: 10.2142851em; /* 143px / 14 */
 	background: #5c5c5c;
