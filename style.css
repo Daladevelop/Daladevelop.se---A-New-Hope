@@ -286,7 +286,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 	/* Change the orientation of the menu */
 		nav[role=navigation] {
-			width: 65%;
+			width: 68%;
 			height: 49px;
 			top: 3em;
 			
@@ -337,6 +337,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 			border-left: 1px solid #2f2f2f;
 			border-top-right-radius: 5px;
 			border-bottom-right-radius: 5px;
+			border-bottom: 1px solid #2f2f2f;
 		}
 		nav[role=navigation] ul li a {
 			line-height: 49px;
