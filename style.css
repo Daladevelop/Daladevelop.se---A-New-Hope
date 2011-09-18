@@ -253,3 +253,57 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 	
 } /* End of >481px
+
+/* > 640px */
+@media all and (min-width: 641px) {
+	/* Add some whitespace */
+		header, article {
+			padding: 2em;
+		}
+		nav[role=navigation] {
+			left: 2em;
+		}
+		#frontpage-slider article h3 {
+			margin-left: -1em;
+			margin-top: -2.85em;
+		}
+	
+	/* Change size of header */
+	header[role=banner] {
+		height: 10em;
+	}
+	
+	/* Change the orientation of the menu */
+		nav[role=navigation] {
+			width: auto;
+			height: 49px;
+			
+			border-radius: 5px;
+			
+			top: 3em;
+			
+			/*background: url('pix/bg-gradient.png') no-repeat 0 0;*/
+		}
+		nav[role=navigation] ul {
+			display: -webkit-box;
+			display: -moz-box;
+			display: box;
+				
+			max-width: 768px;
+			margin: 0 auto;
+		}
+		nav[role=navigation] ul li {
+			-webkit-box-orient: horizontal;
+			-webkit-box-flex: 1;
+				
+			-moz-box-orient: horizontal;
+			-moz-box-flex: 1;
+				
+			box-orient: horizontal;
+			box-flex: 1;
+		}
+		nav[role=navigation] ul li a {
+			line-height: 49px;
+		}
+
+}
