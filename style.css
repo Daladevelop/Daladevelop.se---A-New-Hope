@@ -166,6 +166,12 @@ header[role=banner] h1 a, header[role=banner] span a {
 	}
 /* End of footer */
 
+/* Frontpage sliders */
+	#frontpage-slider {
+		background: #565656;
+	}
+/* End of frontpage sliders */
+
 /* Arrow headers */
 	#frontpage-slider h3 {
 		font-size: 1.42857143em; /* 20px */
