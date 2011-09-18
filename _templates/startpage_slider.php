@@ -12,6 +12,9 @@
 	);
 
 	$startpagePosts->query($args);
+	if ($startpagePosts->have_posts()) : ?>
+		<h3>Direkt från Lekstugan</h3>
+	<?php endif;
 	while($startpagePosts->have_posts()): $startpagePosts->the_post(); ?>
 		<h2><?php the_title(); ?></h2>
 			
