@@ -13,10 +13,16 @@
 	$startpagePosts->query($args);
 	if ($startpagePosts->have_posts()) : ?>
 		<h3>Direkt från Lekstugan</h3>
-	<?php endif;
+<?php endif;
+	$slide = 1; 
 	while($startpagePosts->have_posts()): $startpagePosts->the_post(); ?>
-		<h2><?php the_title(); ?></h2>
-			PRIORITY: <?php meta('priority'); ?><br/>			
+		<article class="slide_<?php echo $slide++; ?>">
+			<h2><?php the_title(); ?></h2>
+			<?php the_excerpt(); ?>
+
+			<a href="<?php the_permalink();?>" alt="<?php the_title(); ?>" >Kika</a>
+		</article>
+
 
 
 	<?php endwhile; ?>
