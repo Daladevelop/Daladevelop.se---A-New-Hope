@@ -127,7 +127,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 		width: 200px;
 		position: relative;
-		margin: 2em auto;
+		margin: 2em auto 3em auto;
 		
 		padding: 0 10px;
 	}
@@ -181,6 +181,10 @@ header[role=banner] h1 a, header[role=banner] span a {
 		border-image: url('pix/blueflag-border.png') 17 17 17 17;
 		border-width: 17px;
 		width: 200px;
-}
+	}
+	
+	#frontpage-slider article {
+		position: relative;
+		top: -38px;
 	}
 /* End of arrow headers */
