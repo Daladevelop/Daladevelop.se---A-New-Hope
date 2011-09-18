@@ -127,7 +127,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 		width: 200px;
 		position: relative;
-		margin: 0 auto;
+		margin: 2em auto;
 		
 		padding: 0 10px;
 	}
