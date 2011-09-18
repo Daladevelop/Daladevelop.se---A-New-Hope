@@ -88,6 +88,7 @@ header[role=banner] {
 	overflow: hidden;
 	
 	background: url('pix/logo-vertical.png') no-repeat 50% 2em;
+	background: url('pix/logo-vertical.png') no-repeat 50% 2em, url('pix/bg-noise.png') repeat 0 0;
 }
 
 header[role=banner] h1, header[role=banner] span {
@@ -205,6 +206,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 	#frontpage-slider article:nth-of-type(2) {
 		background: #565656;
+		background: url('pix/bg-noise.png') repeat 0 0;
 	}
 	
 	/* The "Kika" link */
