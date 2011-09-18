@@ -243,16 +243,17 @@ header[role=banner] h1 a, header[role=banner] span a {
 /* The Twitter box */
 	body #twitter {position: relative; }
 	
+	#twitter {
+		margin: 1em 1em 2em 10px;
+		max-width: 400px;
+		overflow-x: visible;
+	}
+	
 	body #twitter #a-horse-with-no-name{
 		position:absolute; 
 		top: 0;
-		right: -40px;
+		right: -15px;
 		z-index: 99999;
-	}
-	
-	#twitter {
-		margin: 1em 0 2em 10px;
-		max-width: 440px;
 	}
 /* End of twitter */
 
@@ -271,6 +272,20 @@ header[role=banner] h1 a, header[role=banner] span a {
 		left: 1em;
 	}
 	
+	body #twitter #a-horse-with-no-name{
+		right: -40px;
+	}
+	
+	article {
+		text-align: justify;
+	}
+	
+	header, nav[role=navigation], article {
+		padding: 20px;
+	}
+	#twitter {
+		margin-left: 20px;
+	}
 	
 	
 } /* End of >481px
