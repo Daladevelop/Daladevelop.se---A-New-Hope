@@ -162,6 +162,9 @@ header[role=banner] h1 a, header[role=banner] span a {
 	nav[role=navigation] ul li a:hover {
 		background: rgba(255,255,255,0.2);
 	}
+	nav[role=navigation] ul li.current_page_item a {
+		background-color: #202020; 
+	}
 /* End of main navigation */
 
 /* Footer */
