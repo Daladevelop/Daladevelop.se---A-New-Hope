@@ -127,7 +127,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 		width: 200px;
 		position: relative;
-		margin: 0 auto;
+		margin: 2em auto;
 		
 		padding: 0 10px;
 	}
@@ -165,6 +165,12 @@ header[role=banner] h1 a, header[role=banner] span a {
 		color: #535353;
 	}
 /* End of footer */
+
+/* Frontpage sliders */
+	#frontpage-slider {
+		background: #2b2d30;
+	}
+/* End of frontpage sliders */
 
 /* Arrow headers */
 	#frontpage-slider h3 {
