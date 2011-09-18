@@ -171,6 +171,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	footer {
 		background: #2b2d30;
 		padding: 10px;
+		clear: both;
 	}
 	
 	footer span#tagline {
@@ -285,20 +286,20 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 	/* Change the orientation of the menu */
 		nav[role=navigation] {
-			width: auto;
+			width: 65%;
 			height: 49px;
-			
-			border-radius: 5px;
-			
 			top: 3em;
 			
+			background: none;
+			border: none;
 			/*background: url('pix/bg-gradient.png') no-repeat 0 0;*/
 		}
 		nav[role=navigation] ul {
 			display: -webkit-box;
 			display: -moz-box;
 			display: box;
-				
+			
+			width: 100%;
 			max-width: 768px;
 			margin: 0 auto;
 		}
@@ -311,18 +312,56 @@ header[role=banner] h1 a, header[role=banner] span a {
 				
 			box-orient: horizontal;
 			box-flex: 1;
+			
+			border: 1px solid #2f2f2f;
+			border-left: none;
+			border-right: none;
+			
+			height: 49px;
+			text-align: center;
+			
+			background: rgb(62,62,62); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(62,62,62,1) 70%, rgba(35,35,35,1) 100%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,rgba(62,62,62,1)), color-stop(100%,rgba(35,35,35,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* IE10+ */
+			background: linear-gradient(top, rgba(62,62,62,1) 70%,rgba(35,35,35,1) 100%,rgba(125,185,232,1) 100%); /* W3C */
+		}
+		nav[role=navigation] ul li:first-of-type {
+			border-left: 1px solid #2f2f2f;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		nav[role=navigation] ul li:last-of-type {
+			border-left: 1px solid #2f2f2f;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
 		}
 		nav[role=navigation] ul li a {
 			line-height: 49px;
 		}
+		nav[role=navigation] ul li:first-of-type a {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		nav[role=navigation] ul li:last-of-type a {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
 		
 		/* Float twitter and latest blog post */
 		body #blogexcerpt, body #twitter {
+			-webkit-box-sizing: border-box;
 			float: left;
-			width: 400px;
-			padding: 20px;
-		   margin:0 0 50px 0; 	
-		   position: relative;
+			width: 50%;
+			max-width: 342px; /* 768px - gutters (3x 2em (28px)) / 2 = 768 - 84 = 684px / 2 )= 342px */
+			padding: 2em;
+			margin:0 0 50px 0; 	
+			position: relative;
+		}
+		body #twitter {
+			padding: 2em 2em 2em 2em;
 		}
 		body #twitter #a-horse-with-no-name {
 			position: absolute;

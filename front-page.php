@@ -46,7 +46,6 @@
 				  interval: 300,
 				  title: '',
 				  subject: '',
-				  width: 330,
 				  height: 220,
 				  theme: {
 			    shell: {
@@ -73,7 +72,6 @@
 		</script>
 		</section>
 	</section>
-	<br style="clear:both;"/>
 	<?php get_footer(); ?>
 </body>
 </html>
