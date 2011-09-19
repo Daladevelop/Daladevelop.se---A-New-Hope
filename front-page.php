@@ -25,7 +25,7 @@
 			<article>
 				<h3><?php the_title();?></h3>
 					<span class="thedate"><?php echo get_the_date('Y-m-j'); ?></span>
-				<?php the_excerpt(); ?>
+				<?php the_content(); ?>
 				<a href="" title="">Läs mer</a>
 			</article>
 		<?php endwhile; ?>

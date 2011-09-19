@@ -23,7 +23,7 @@
 			<h3>Från bloggen</h3>
 		<?php endif; ?>
 			<h2><?php the_title(); ?></h2>
-			<?php the_excerpt(); ?>
+			<?php the_content(); ?>
 
 			<a href="<?php the_permalink();?>" alt="<?php the_title(); ?>" >Kika</a>
 		</article>
