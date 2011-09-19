@@ -202,6 +202,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 	
 	#frontpage-slider article {
 		padding-bottom: 4em;
+		overflow: hidden; 
 	}
 	
 	#frontpage-slider article h3 {
