@@ -361,7 +361,6 @@ header[role=banner] h1 a, header[role=banner] span a {
 			border-bottom-left-radius: 5px;
 		}
 		nav[role=navigation] ul li:last-of-type {
-			border-left: 1px solid #2f2f2f;
 			border-top-right-radius: 5px;
 			border-bottom-right-radius: 5px;
 			border-bottom: 1px solid #2f2f2f;
