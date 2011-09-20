@@ -182,6 +182,10 @@ header[role=banner] h1 a, header[role=banner] span a {
 		line-height: 1em;
 		color: #535353;
 	}
+	footer span#tagline:after {
+		clear: both; 
+
+	}
 	footer section#quote {
 		float: left;
 		width: 300px; 
