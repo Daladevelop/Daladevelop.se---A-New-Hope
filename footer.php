@@ -1,5 +1,24 @@
 <footer id="footer">
+	<section id="quote">
+		<?php
+		$args = array(
+			'post-type' => 'citat',
+			'numberpost' => 1,
+			'orderby' => 'rand'
 
+		);
+		$quote = new WP_Query($args);
+		while($quote->have_posts()): $quote->the_post(); 
+			the_content();
+		endwhile;
+
+		?>
+
+
+
+
+
+	</section>
 	<span id="tagline">
 		<?php bloginfo('description'); ?>
 	</span>
