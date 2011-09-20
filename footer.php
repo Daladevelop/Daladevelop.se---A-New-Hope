@@ -3,7 +3,7 @@
 		<?php
 		$args = array(
 			'post_type' => 'citat',
-			'numberpost' => 1,
+			'posts_per_page' => 1,
 			'orderby' => 'rand'
 
 		);
