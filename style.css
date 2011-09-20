@@ -183,6 +183,10 @@ header[role=banner] h1 a, header[role=banner] span a {
 		color: #535353;
 	}
 	footer span#tagline:after {
+		content: ".";
+		display: block; 
+		height: 0; 
+		visibility: hidden; 
 		clear: both; 
 
 	}
