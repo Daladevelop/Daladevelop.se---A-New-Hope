@@ -173,6 +173,7 @@ header[role=banner] h1 a, header[role=banner] span a {
 		background: #2b2d30;
 		padding: 10px;
 		clear: both;
+		text-align: center; 
 	}
 	
 	footer span#tagline {
@@ -180,6 +181,11 @@ header[role=banner] h1 a, header[role=banner] span a {
 		font-size: 1.857144286em; /* 26px */
 		line-height: 1em;
 		color: #535353;
+	}
+	footer section#quote {
+		float: left;
+		width: 300px; 
+
 	}
 /* End of footer */
 
