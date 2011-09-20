@@ -2,7 +2,7 @@
 	<section id="quote">
 		<?php
 		$args = array(
-			'post-type' => 'citat',
+			'post_type' => 'citat',
 			'numberpost' => 1,
 			'orderby' => 'rand'
 
